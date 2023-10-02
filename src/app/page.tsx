@@ -86,7 +86,7 @@ export default function Home() {
   })
 
   return (
-    <div>
+    <div className={styles.main}>
       <form onSubmit={handleSubmit(search)} className={styles.searchForm}>
         <div className={styles.searchBox}>
           <input placeholder="キーワード" {...register("keyword")} className={styles.keywordInput} />
@@ -159,7 +159,7 @@ export default function Home() {
                     {course.備考.includes("対面(オンライン併用型)") && <span>対面(オンライン併用型)</span>}
                     {course.備考.includes("オンデマンド") && <span>オンデマンド</span>}
                   </div>
-                  <p>{course.授業概要}</p>
+                  <p className={styles.overview}>{course.授業概要}</p>
                 </a>
               </div>
             ))

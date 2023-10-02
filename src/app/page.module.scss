@@ -1,3 +1,8 @@
+.main {
+  max-width: 1080px;
+  margin-inline: auto;
+}
+
 .searchForm {
   display: grid;
   gap: 12px;
@@ -34,8 +39,9 @@
   .courses {
     padding: 12px;
     display: grid;
-    grid-template-columns: 200px max-content 2fr;
+    grid-template-columns: 240px max-content 2fr;
     align-items: center;
+    gap: 8px;
 
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -68,6 +74,10 @@
           border-radius: 4px;
           padding: 2px 6px;
         }
+      }
+
+      .overview {
+        font-size: 14px;
       }
     }
 
