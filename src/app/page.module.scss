@@ -34,14 +34,19 @@
   .courses {
     padding: 12px;
     display: grid;
-    grid-template-columns: 2fr max-content 2fr;
+    grid-template-columns: 200px max-content 2fr;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
 
     .course {
       display: contents;
 
       .link {
         display: contents;
+        color: black;
       }
 
       .code {
@@ -50,6 +55,19 @@
 
       .title {
         font-size: 16px;
+      }
+
+      .tags {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+
+        span {
+          font-size: 14px;
+          background: #cccccc;
+          border-radius: 4px;
+          padding: 2px 6px;
+        }
       }
     }
 
