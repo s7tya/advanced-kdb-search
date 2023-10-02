@@ -1,0 +1,58 @@
+.searchForm {
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+}
+
+.searchBox {
+  display: flex;
+  gap: 4px;
+
+  .keywordInput {
+    border: 1px solid #cccccc;
+    height: 32px;
+    border-radius: 6px;
+    padding: 2px 8px;
+    flex-grow: 1;
+  }
+
+  .submitButton {
+    background: #53D7E0;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.result {
+  .hitCount {
+    padding: 0 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .courses {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 2fr max-content 2fr;
+    align-items: center;
+
+    .course {
+      display: contents;
+
+      .link {
+        display: contents;
+      }
+
+      .code {
+        font-size: 14px;
+      }
+
+      .title {
+        font-size: 16px;
+      }
+    }
+
+  }
+
+}
